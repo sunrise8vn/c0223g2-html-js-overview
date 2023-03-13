@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>NVA</td>
+                <td>
+                    <button type="button" class="accept">
+                        Accept
+                    </button>
+                    <button type="button" class="deny">
+                        Deny
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>NVB</td>
+                <td>
+                    <button type="button" class="accept">
+                        Accept
+                    </button>
+                    <button type="button" class="deny">
+                        Deny
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        let btnAccept = document.querySelectorAll('.accept');
+
+        btnAccept.forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.innerText = 'Accepted';
+            });
+        });
+
+        let btnDeny = document.querySelectorAll('.deny');
+
+        btnDeny.forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.innerText = 'Denied';
+            });
+        });
+
+        // let btnAccepts = document.querySelectorAll('.accept');
+
+        // btnAccepts.forEach(function (item) {
+        //     item.click();
+        // });
+    </script>
+
+</body>
+</html>

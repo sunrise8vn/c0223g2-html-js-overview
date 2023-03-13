@@ -1,0 +1,22 @@
+thead {
+    background-color: green;
+    color: #fff;
+}
+
+thead tr th {
+    padding: 10px;
+}
+
+tbody tr:hover {
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+}
+
+h1 {
+    color: blue !important;
+}
+
+h1:hover {
+    color: orange !important;
+}
